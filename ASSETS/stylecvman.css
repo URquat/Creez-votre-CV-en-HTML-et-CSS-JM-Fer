@@ -7,13 +7,36 @@
 }
 
 body{
-    width: 900px;
-    position: center;
+    width: 1160px;
+    
 }
-h1{
+
+.header{
+    display: flexbox;
+    background-color: #a55755;
+    justify-content: center;
+}
+
+.cv-header__photo-portrait{
+    padding-top: 1rem;
+    
+    
+}
+.header__h1{
     font-family: Lato;
     font-size: 3rem;
     font-style: oblique;
+    color: white; 
+    margin-top: 1rem;
+    
+}
+
+.header__h2{
+    font-family: Lato;  
+    color: white;
+    
+    
+    
 }
 
 p{
@@ -34,7 +57,11 @@ p{
 img{
     width: 7rem ;
     border-radius: 50% ;
-    border-color:chocolate 3rem;
-    
-    
+    border-color:chocolate 3rem;   
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
