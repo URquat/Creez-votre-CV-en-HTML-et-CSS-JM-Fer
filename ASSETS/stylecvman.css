@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @font-face{
@@ -11,19 +10,20 @@
 
 body{
     width: 1160px;  
-    border-right: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;   
+    height: 1624px;
+    border-right: 3px solid black;     /*  le corps du cv a une bordure sur le côté droit de 3px d'épaisseur et de couleur noir  */
+    margin-right: auto; /* pour centrer le cv dans le navigateur */
+    margin-left: auto;         
 }
 
 .header{
     width: 1160px;
-    height: 230px;
+    height: 260px;
     color: white;
     background-color: #782221;
     padding-top: 25px;
     padding-bottom: 20px;
-    font-family: Lato;
+
 }
 
 .flex{
@@ -31,23 +31,30 @@ body{
     justify-content: center;
 }
 
-img{
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 3px black;
+header img{
+    border-radius: 50%;     /*  photo arrondie */
+    box-shadow: 0px 0px 10px 3px black;      /* ombre autour de la photo */
+    cursor:zoom-in ;    /* au passage sur l'image le cursor se change en loop */
 }
 
-
-
-nav a{
+.menu__item{
+    display: flex;
     background-color: black;
     color: white;
     text-decoration: none;
     text-align: center;
     height: 0.5rem;
-    padding-top: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
     border-right: 5px black;
     width: 1160px;
-    padding:0.5rem 40px 35px 40px; 
+    padding:0.5rem 40px 35px 40px;
+    height: 50px;    
+}
+
+/* au survol, les liens seront soulignés  de couleur white */
+nav a:hover{
+    text-decoration: underline white;
 }
 
 main{
@@ -60,53 +67,96 @@ main{
  .main__left-column {
     display: flex;
     flex-direction: column ;
-    height: 1010px;
+    height: 1104px;
     background-color: #782221;
     padding-right: 30px;
-    padding-left: 10px;
     padding-top: 2px;
 }
 
-.main__left-column-h2{
-    background-color: #dbc2a4;    
+.main__left-column-h3{
+    background-color: #dbc2a4;
+    padding-left: 10px;    
 }
 
 .main__left-column-p{
     color: white;
-    text-indent: 10%;
-    text-align: justify;
+    text-indent: 15%;  /* texte de la rubrique "A propos" estnindenté sur la 1ere ligne */
+    text-align: justify;   /* je texte est justifié à gauche comme à droite */
+    padding-left: 12px;
 }
 
 .ul-left-column-langues, .ul-left-column-interêts{
     color: white;
-    padding-left: 15px;
+    padding-left: 28px;
 }
 
 .main__right-column{
     display: block;
     flex-direction: column;
-    height: 1010px;
-    height: 1010px;
+    height: 1102px;
     padding-left: 30px;
     padding-right: 15px;
     width: 780px;
-    
+    padding-top: 4px;
 }
 
-.main__right-column-h2{
+.main__right-column-h3{
     background-color: #dbc2a4;
-    padding-left: 15px;
+    padding-left: 15px;  
 }
 
-.main__right-column-h3{   
-    line-height: 1;
+
+.main__right-column-h3:hover{         /* au survol un trait bordeaux apparaît à gauche*/
+    border-left: 8px solid #782221;
 }
+
+
 
 
 .footer{
     background-color: #782221;
     display: flex;
+    height: 100px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+footer a{
+    padding:10px 10px 20px;
     
 }
 
+/* au survol d'une icône d'un réseau social, l'opacité.... */
+a img:hover{
+    opacity: 0.5;
+}
+
+footer p{
+    color: white;
+    height: 10px;
+    margin-top: -30px;
+    margin-left: 490px;   
+}
+
+
+
+/* polices de caractères de la page */
+h1{
+    font:normal 2.5em Lato,sans-serif;
+ }
+ h2{
+    font:normal 1.2em Lato, sans-serif;
+ }
+h3{
+    font:bold 1.5em Lato, sans-serif;
+}
+h4{
+    font:bold 1.1em Lato, sans-serif;
+}
+p li{
+    font:normal 2.5em Raleway-ExtraLightItalic, sans-serif;
+}
+footer p{
+    font: italic 0.7em Raleway-ExtraLightItalic, sans-serif;
+}    
 

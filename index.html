@@ -1,40 +1,55 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Documentcvman</title>
-        <link rel="icon" href="./Images/Icones/FAVICON.png">
-        <link rel="stylesheet" href="./ASSETS/stylecvman.css">
-    </head>
-    
-    <header class="header ">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Documentcvman</title>
         
-      <div class="header__photo flex"><img src="./Images/Icones/FAVICON1.png" alt="un faon dans la clairière" ></div>
-      <h1 class="header__name flex">FANFAN</h1>
-      <h2 class="header__intitulé flex">Développeur web junior</h2>
+      <link rel="apple-touch-icon" sizes="180x180" href="./Images/Icones/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./Images/Icones/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./Images/Icones/favicon-16x16.png">
+      <link rel="icon" type="image/ico" href="./Images/Icones/favicon.ico">
+      <link rel="manifest" href="./Images/Icones/site.webmanifest">
+
+
+      <link rel="stylesheet" href="./ASSETS/stylecvman.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>   
+    <header class="header ">
+      
+       <div class="header__photo flex"><a href="./Images/Icones/granddeer-5247333_640.png"> <img src="./Images/Icones/photo1.png" alt="un faon dans la clairière" ></a></div>
+            <!--avec  a href="" au clique l'image s'ouvre en grand-->
+
+       <h1 class="header__name flex">FANFAN</h1>
+       <h2 class="header__intitulé flex">Développeur web junior</h2>
     </header>
 
       <nav class="nav flex">
-          <a href="https://maps.app.goo.gl/k5bspR7Kp9zxAdMaA">Place de la République<br>32800 Eauze</a>
-          <a href="mailto:manuel.fer@cegel.com">uel.fer@tel.com</a>
-          <a href="tel:+33606060606">0606060606</a>
+          <a href="https://maps.app.goo.gl/k5bspR7Kp9zxAdMaA" class="menu__item">Place de la République<br>32800 Eauze</a>
+          <a href="mailto:manuel.fer@cegel.com" class="menu__item">uel.fer@tel.com</a>
+          <a href="tel:+33606060606" class="menu__item">0606060606</a>
       </nav>
+      
 
     <main class="main">
+      <section>
          <div class="main__left-column">
-             <h2 class="main__left-column-h2">A propos</h2>
-             <p class="main__left-column-p"> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero siPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sitt</p>
+             <h3 class="main__left-column-h3">A propos</h3>
+             <p class="main__left-column-p"> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero siPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sitt.</p>
   
-             <h2 class="main__left-column-h2">Langues parlées</h2>
+             <h3 class="main__left-column-h3">Langues parlées</h3>
                 <ul class="ul-left-column-langues">
                    <li>Français - Langue maternelle</li>
                    <li>Anglais - Débutant</li>
                    <li>Portugais - Intermédiaire</li>
                 </ul>
     
-             <h2 class="main__left-column-h2">Centres d'intérêts</h2>   
+             <h3 class="main__left-column-h3">Centres d'intérêts</h3>   
                 <ul class="ul-left-column-interêts">
                    <li>Vie associative dans un club de modélisme depuis 1991</li>
                    <li>Lecture de revues techniques</li>
@@ -42,10 +57,14 @@
                 </ul>
   
          </div>
+      </section>
 
+
+      <section>
          <div class="main__right-column">
-            <h2 class="main__right-column-h2">Expériences professionnelles</h2>
-            <h3 class="main__right-column-h3">Technicien service client PC N1 chez Ricoh-France</h3>
+            <h3 class="main__right-column-h3">Expériences professionnelles</h3>
+                 
+            <h4 class="main__right-column-h4">Technicien service client PC N1 chez Ricoh-France</h4>
             <p>De 2011 à 2023</p>
                <ul class="ul-right-column-expépro-RF">
                   <li>Mission 1: Maintenance presses couleurs de la série Pro C5100 à Pro C9200.</li>
@@ -53,7 +72,7 @@
                   <li>Mission 3: Gestion ddes pièces détachées. </li>
                </ul>
 
-            <h3 class="main__right-column-h3">Technicien de maintenance haut volume chez Kodak Pathé France et Danka France</h3>  
+            <h4 class="main__right-column-h4">Technicien de maintenance haut volume chez Kodak Pathé France et Danka France</h4>  
             <p>De 1984 à 2011</p>
                <ul>
                   <li>Mission 1: Technicien leader sur la région Grand Est.</li>
@@ -62,45 +81,46 @@
                   <li>Mission 4: Formation connexion et base réseau.</li>
                </ul>
 
-            <h3 class="right-column__h3">Technicien chez Infomat</h3> 
+            <h4 class="right-column__h4">Technicien chez Infomat</h4> 
             <p>De 1981 à 1984</p>  
                <ul>
                   <li>Mission 1: Maintenance DAB (distributeur de billets)</li>
                   <li>Mission 2: Mise en place du service maintenance sur l'agence de Reims de 1983 à 1984.</li>
                </ul>
 
-            <h2 class="main__right-column-h2">Diplômes / Formations</h2>   
-            <h3 class="right-column__h3">Formation Développeur web en cours</h3>
+            <h3 class="main__right-column-h3">Diplômes / Formations</h3>   
+            <h4 class="right-column__h4">Formation Développeur web en cours</h4>
             <p>Du 01/11/2023 au 31/12/2025</p>
             <p>Ecole : Centre Européen de Formation</p>
    
-            <h3 class="right-column__h3">Formation Electrotechnique / BacF3</h3>
+            <h4 class="right-column__h4">Formation Electrotechnique / BacF3</h4>
             <p>Du 01/01/1978 au 01/07/1979</p>
             <p>Lycée Technique des nouveaux horizons</p> 
             
-            <h2 class="main__right-column-h2">Compétences</h2>
+            <h3 class="main__right-column-h3">Compétences</h3>
                <ul>
                   <li>HTML5 - Débutant </li>
                   <li>CSS3 - Débutant</li>
                   <li>GitHub - Débutant</li>
                </ul>
-        </div>
-
-
+         </div>
+      </section>
     </main>
+
+    <footer>
         <div class="footer">
             <a href="https://www.linkedin.com"><img src="./Images/Icones/linkedin.png" alt="icone de Linkedin"></a>
 
             <a href="https://www.twitter.com"><img src="./Images/Icones/twitter.png" alt="icône de Twitter"></a>
 
-            <a href="https://www.GitHub.com"><img src="./Images/Icones/github_alt_macos_bigsur_icon_190138 (1).png" alt="icône de GitHub"></a>    
-
-            <div>
-               <p>Dernière mise à jour le........</p>  
-            </div>
+            <a href="https://www.GitHub.com"><img src="./Images/Icones/github.png" alt="icône de GitHub"></a>   
           
-
         </div>
+
+        <div>
+         <p>Dernière mise à jour le 25 avril 2024</p>  
+        </div>
+    </footer>
 
 </body>
 </html>
