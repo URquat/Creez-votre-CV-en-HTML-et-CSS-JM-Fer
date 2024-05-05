@@ -37,9 +37,12 @@ header img{
     cursor:zoom-in ;    /* au passage sur l'image le cursor se change en loop */
 }
 
+
+
+
 .menu__item{
     display: flex;
-    background-color: black;
+    background-color: #2c1d27;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -53,7 +56,7 @@ header img{
 }
 
 /* au survol, les liens seront soulignés  de couleur white */
-nav a:hover{
+section a:hover{
     text-decoration: underline white;
 }
 
@@ -73,7 +76,7 @@ main{
     padding-top: 2px;
 }
 
-.main__left-column-h3{
+.main__left-column-h2{
     background-color: #dbc2a4;
     padding-left: 10px;    
 }
@@ -100,14 +103,14 @@ main{
     padding-top: 4px;
 }
 
-.main__right-column-h3{
+.main__right-column-h2{
     background-color: #dbc2a4;
     padding-left: 15px;  
 }
 
 
-.main__right-column-h3:hover{         /* au survol un trait bordeaux apparaît à gauche*/
-    border-left: 8px solid #782221;
+.main__right-column-h2:hover{         /* au survol un trait bordeaux apparaît à droite*/
+    border-right: 8px solid #782221;
 }
 
 
@@ -142,17 +145,15 @@ footer p{
 
 /* polices de caractères de la page */
 h1{
-    font:normal 2.5em Lato,sans-serif;
+    font:normal 1.8em Lato,sans-serif;
  }
  h2{
-    font:normal 1.2em Lato, sans-serif;
+    font:bolder 1.4em Lato, sans-serif;
  }
 h3{
-    font:bold 1.5em Lato, sans-serif;
+    font:bold 1.2em Lato, sans-serif;
 }
-h4{
-    font:bold 1.1em Lato, sans-serif;
-}
+
 p li{
     font:normal 2.5em Raleway-ExtraLightItalic, sans-serif;
 }
@@ -160,3 +161,6 @@ footer p{
     font: italic 0.7em Raleway-ExtraLightItalic, sans-serif;
 }    
 
+p.header__name{
+    font: normal 2.0em Raleway-Black, sans-serif;
+}
