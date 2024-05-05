@@ -11,7 +11,7 @@
 body{
     width: 1160px;  
     height: 1624px;
-    border-right: 3px solid black;     /*  le corps du cv a une bordure sur le côté droit de 3px d'épaisseur et de couleur noir  */
+    border-right: 3px solid black;     /*  le corps du cv a une bordure sur le côté droit de 3px d'épaisseur et de couleur noir   */
     margin-right: auto; /* pour centrer le cv dans le navigateur */
     margin-left: auto;         
 }
